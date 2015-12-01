@@ -1,12 +1,7 @@
 <?php
-/*
-print("<h1>OLA K ASE</h1>");
-print "Random:".random_pic();
-*/
 
-//setImageHeaders();
+setImageHeaders();
 returnImageData(chooseRandomPic('icons'));
-exit;
 
 function chooseRandomPic($dir = '.'){
     $files = glob($dir . '/*.*');
@@ -19,7 +14,7 @@ function setImageHeaders(){
 }
 
 function returnImageData($image){
-    readfile(random_pic());
+    readfile($image);
 }
 
 

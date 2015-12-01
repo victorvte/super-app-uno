@@ -1,26 +1,16 @@
-<?php
-/*
-print("<h1>OLA K ASE</h1>");
-print "Random:".random_pic();
-*/
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head> 
+<body>
 
-//setImageHeaders();
-returnImageData(chooseRandomPic('icons'));
-exit;
+<h1>Icono del día</h1>
 
-function chooseRandomPic($dir = '.'){
-    $files = glob($dir . '/*.*');
-    $file = array_rand($files);
-    return $files[$file];
-}
+<img src="randomicon.php"/>
 
-function setImageHeaders(){
-	header('Content-Type: image/jpeg');
-}
-
-function returnImageData($image){
-    readfile(random_pic());
-}
+</body>
+</html>
 
 
 
