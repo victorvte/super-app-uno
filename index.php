@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 </head> 
 <body>
-$instancia=$_SERVER["WEBSITE_INSTANCE_ID"];
+<?php 	
+	$instancia=$_SERVER["WEBSITE_INSTANCE_ID"];
+?>	
 
 <h1>Icono del día</h1>
 
